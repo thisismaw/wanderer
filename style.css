@@ -131,6 +131,13 @@ nav ul {
     text-decoration: none;
     text-shadow: 0px 1px 0px #ffffff;
     cursor: pointer;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  .readButton:hover {
+    background: #f3f3f3;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
   }
   .photo-grid {
     padding-top: 1rem;
@@ -267,7 +274,7 @@ nav ul {
   }
   .showcase {
     position: relative;
-    padding: 20px 120px;
+    padding: 30px 120px;
   }
   .footer-nav ul {
     display: -webkit-box;

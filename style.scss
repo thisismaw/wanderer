@@ -108,6 +108,11 @@ display:none; }
     text-decoration: none;
     text-shadow:0px 1px 0px #ffffff;
     cursor:pointer;
+    transition: 0.3s all;
+    &:hover {
+        background:rgb(243, 243, 243);
+        transition: 0.3s all;
+    }
 }
 .photo-grid {
     padding-top:1rem;
@@ -213,11 +218,6 @@ h1 {
     padding: 2em 0;
 }
 
-
-
-
-
-
 header {
     position:relative;
     padding: 20px 120px;
@@ -234,7 +234,7 @@ header {
     }
     .showcase {
         position: relative;
-        padding: 20px 120px;
+        padding: 30px 120px;
     }
     .footer-nav {
         ul {
