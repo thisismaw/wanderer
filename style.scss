@@ -109,14 +109,15 @@ display:none; }
     p {
         padding:16px 0; 
         font-family: "Gilroy", sans-serif;
-        font-size:16px;;
+        font-size:16px;
     }
 }
 .readButton {
+    display: inline-block;
     box-shadow: inset 0px 1px 0px 0px #fff;
     font-family: "Gilroy", sans-serif;
     border: 2px solid black;
-    padding: 6px 10px;
+    padding: 8px 10px;
     color:black;
     text-decoration: none;
     text-shadow:0px 1px 0px #ffffff;
