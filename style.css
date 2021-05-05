@@ -158,7 +158,8 @@ nav ul {
   }
   .head-p {
     padding: 20px 17px;
-    font-family: "Gilroy", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
     font-size: 16px;
   }
   .showcase {
@@ -172,14 +173,16 @@ nav ul {
   }
   .showcase p {
     padding: 16px 0;
-    font-family: "Gilroy", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 300;
   }
   .readButton {
     display: inline-block;
     -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
             box-shadow: inset 0px 1px 0px 0px #fff;
-    font-family: "Gilroy", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     border: 2px solid black;
     padding: 8px 10px;
     color: black;
@@ -378,6 +381,10 @@ nav ul {
 }
 
 @media only screen and (min-width: 1200px) {
+  .header {
+    width: 1000px;
+    margin: 0 auto;
+  }
   .header-wrapper {
     width: 1000px;
     margin: 0 auto;
