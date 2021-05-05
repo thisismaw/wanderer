@@ -178,23 +178,22 @@ nav ul {
   }
   .readButton {
     display: inline-block;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
-            box-shadow: inset 0px 1px 0px 0px #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 8px 10px;
     color: black;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
     cursor: pointer;
-    -webkit-transition: 0.3s all;
-    transition: 0.3s all;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
   }
   .readButton:hover {
-    background: #f3f3f3;
-    -webkit-transition: 0.3s all;
-    transition: 0.3s all;
+    color: white;
+    background: #6d6d6d;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
   }
   .photo-grid {
     padding-top: 1rem;

@@ -164,20 +164,20 @@ box-shadow: none;
 
     .readButton {
         display: inline-block;
-        box-shadow: inset 0px 1px 0px 0px #fff;
         font-family: 'Raleway', sans-serif;
         font-weight:300;
-        border: 2px solid black;
+        border: 1px solid black;
+        border-radius: 5px;
         padding: 8px 10px;
         color: black;
         text-decoration: none;
-        text-shadow: 0px 1px 0px #ffffff;
         cursor: pointer;
-        transition: 0.3s all;
+        transition: 0.3s all ease-in-out;
 
         &:hover {
-            background: rgb(243, 243, 243);
-            transition: 0.3s all;
+            color:white;
+            background: rgb(109, 109, 109);
+            transition: 0.3s all ease-in-out;
         }
     }
 
