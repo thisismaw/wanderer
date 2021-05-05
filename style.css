@@ -231,7 +231,7 @@ nav ul {
   }
   .ribbon {
     background: #DAABC2;
-    padding: 25px 17px;
+    padding: 0px 17px;
   }
   .ribbon-content {
     display: -webkit-box;
@@ -289,7 +289,7 @@ nav ul {
   }
   .ribbon-wrapper {
     position: relative;
-    padding: 20px 80px;
+    padding: 0px 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,22 +350,22 @@ nav ul {
   }
   header {
     position: relative;
-    padding: 20px 120px;
+    padding: 40px 120px;
   }
   .ribbon {
     position: relative;
-    padding: 20px 120px;
+    padding: 0px 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .wrapper {
     position: relative;
-    padding: 20px 120px;
+    padding: 40px 120px;
   }
   .showcase {
     position: relative;
-    padding: 30px 80px;
+    padding: 40px 80px;
   }
   .footer-nav ul {
     display: -webkit-box;

@@ -177,7 +177,7 @@ box-shadow: none;
         &:hover {
             color:white;
             background: rgb(109, 109, 109);
-            transition: 0.3s all ease-in-out;
+            transition: 0.3s all ease-in-out    ;
         }
     }
 
@@ -217,7 +217,7 @@ box-shadow: none;
 
     .ribbon {
         background: #DAABC2;
-        padding: 25px 17px;
+        padding: 0px 17px;
     }
 
     .ribbon-content {
@@ -281,7 +281,7 @@ box-shadow: none;
 
     .ribbon-wrapper {
         position: relative;
-        padding: 20px 80px;
+        padding:    0px 80px;
         display: flex;
     }
 
@@ -342,23 +342,23 @@ box-shadow: none;
 
     header {
         position: relative;
-        padding: 20px 120px;
+        padding: 40px 120px;
     }
 
     .ribbon {
         position: relative;
-        padding: 20px 120px;
+        padding: 0px 120px;
         display: flex;
     }
 
     .wrapper {
         position: relative;
-        padding: 20px 120px;
+        padding: 40px 120px;
     }
 
     .showcase {
         position: relative;
-        padding: 30px 80px;
+        padding: 40px 80px;
     }
 
     .footer-nav {
