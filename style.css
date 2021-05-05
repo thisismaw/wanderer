@@ -24,10 +24,7 @@ header {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 11px  17px;
+  padding: 11px 17px;
 }
 
 nav .logo {
@@ -54,14 +51,26 @@ nav ul {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar > div {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
   .menu-btn {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -70,11 +79,10 @@ nav ul {
     cursor: pointer;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    border: 3px solid #464646;
   }
   .menu-btn__burger {
     width: 25px;
-    height: 3.5px;
+    height: 2.5px;
     background: #464646;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 5pxw rgba(255, 101, 47, 0.2);
@@ -87,7 +95,7 @@ nav ul {
     content: '';
     position: absolute;
     width: 25px;
-    height: 3.5px;
+    height: 2.5px;
     background: #464646;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -96,15 +104,41 @@ nav ul {
     transition: all .5s ease-in-out;
   }
   .menu-btn__burger::before {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
   }
   .menu-btn__burger::after {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  .menu-btn.open .menu-btn__burger {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    -webkit-transform: rotate(45deg) translate(20px, -20px);
+            transform: rotate(45deg) translate(20px, -20px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    -webkit-transform: rotate(-45deg) translate(20px, 20px);
+            transform: rotate(-45deg) translate(20px, 20px);
   }
   .nav-list {
+    -webkit-transition: .5 all ease-in-out;
+    transition: .5 all ease-in-out;
     display: none;
+    font-family: "Dank Mono", san-serif;
+    padding: 11px 17px;
+  }
+  .nav-list ul {
+    list-style-type: none;
+  }
+  .nav-list ul li {
+    padding: 4px;
+    text-align: center;
   }
   .header-img {
     padding: 2rem 1rem 2rem 0rem;
@@ -114,7 +148,7 @@ nav ul {
     max-height: 100%;
   }
   .head-title {
-    padding: 11px  17px;
+    padding: 11px 17px;
   }
   .head-title h1 {
     font-family: "Gotham Pro", sans-serif;
@@ -134,7 +168,7 @@ nav ul {
     font-family: "Gotham Pro", sans-serif;
     font-weight: lighter;
     color: #464646;
-    font-size: 35px;
+    font-size: 24px;
   }
   .showcase p {
     padding: 16px 0;
@@ -214,10 +248,11 @@ nav ul {
   }
   .wrapper {
     padding: 30px 17px;
+    padding-bottom: 0px;
   }
   .footer-nav li {
     list-style: none;
-    padding-top: 10px;
+    padding: 10px;
     font-family: "Dank Mono", san-serif;
     color: black;
   }
@@ -236,12 +271,35 @@ nav ul {
   }
   .wrapper-foot__mobile .credits p {
     font-family: "Dank Mono", san-serif;
+    padding: 10px;
   }
   .brand-footer {
     padding: 1rem;
     text-align: center;
     font-family: "Avenir Next", san-serif;
     font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: relative;
+    padding: 20px 80px;
+  }
+  .ribbon-wrapper {
+    position: relative;
+    padding: 20px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper {
+    position: relative;
+    padding: 20px 80px;
+  }
+  .showcase {
+    position: relative;
+    padding: 30px 80px;
   }
 }
 
